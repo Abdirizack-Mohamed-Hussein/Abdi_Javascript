@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Assignment 1: Create an Array
+let colors = ['red', 'green', 'blue'];
+
+// Assignment 2: Access and Modify Array Elements
+let fruits = ['apple', 'banana', 'orange'];
+fruits[1] = 'pear';
+console.log(fruits); // Output: ['apple', 'pear', 'orange']
+
+// Assignment 3: Determine the Length of an Array
+let numbers = [1, 2, 3, 4, 5];
+let lengthOfNumbers = numbers.length;
+console.log(lengthOfNumbers); // Output: 5
+
+// Assignment 4: Use .pop() Method
+let languages = ['JavaScript', 'Python', 'Java', 'C++'];
+languages.pop();
+console.log(languages); // Output: ['JavaScript', 'Python', 'Java']
+
+
+// Assignment 1: Combine Arrays
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let combinedArray = arr1.concat(arr2);
+combinedArray.shift();
+console.log(combinedArray); // Output: [2, 3, 4, 5, 6]
+
+// Assignment 2: Extract Subarray
+let sourceArray = ['a', 'b', 'c', 'd', 'e', 'f'];
+let extractedArray = sourceArray.slice(2, 4);
+extractedArray.splice(0, 2, 'x', 'y', 'z');
+console.log(sourceArray); // Output: ['a', 'b', 'c', 'd', 'e', 'f']
+console.log(extractedArray); // Output: ['x', 'y']
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="task.js"></script>
+    <script>
+        let Zero_50 = []
+        let Fifty_100 = []
+        let hundred = []
+
+
+        for (let i = 0; i < countries.length; i++) {
+            let population = countries[i].population;
+            if (population > 0 && population <= 50000000) {
+                Zero_50.push(population);
+            } else if (population > 50000000 && population <= 100000000) {
+                Fifty_100.push(population);
+            } else {
+                hundred.push(population);
+            }
+        }
+
+        console.log(Zero_50);
+        console.log(Fifty_100);
+        console.log(hundred);
+
+        //declare an object
+        let population={}
+       population["0-50000000"]=Zero_50.length
+       population["50000000-100000000"]=Fifty_100.length
+       population["100000000>"]=hundred.length
+       console.log(population);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Check if a number is odd or even
+const number = prompt("Enter your number:");
+if (number % 2 === 0) {
+  alert(`${number} is even.`);
+} else {
+ alert(`${number} is odd.`);
+}
+
+
+// Find the largest of three numbers
+const num1 = prompt("Enter your number:");
+const num2 = prompt("Enter your number:");
+const num3 = prompt("Enter your number:");
+
+let largest = num1;
+if (num2 > largest) {
+  largest = num2;
+}
+if (num3 > largest) {
+  largest = num3;
+}
+alert(`The largest number is: ${largest}`);
+
+// Check if a year is a leap year
+const year = prompt("Enter your DOD year:");
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  alert(`${year} is a leap year.`);
+} else {
+ alert(`${year} is not a leap year.`);
+}
+
+    </script>
+</body>
+</html>

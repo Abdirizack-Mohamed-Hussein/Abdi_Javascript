@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Task 1: Display numbers from 0 to 500 divisible by both 5 and 7
+
+           let DIVarray=[];
+        for (let i = 0; i <= 500; i++) {
+            if (i % 5 === 0 && i % 7 === 0) {
+                DIVarray.push(i);
+            }
+        }
+
+        // Task 2: Display numbers from 20 to 80 divisible by 7 only
+        console.log("Task 2:");
+        for (let i = 20; i <= 80; i++) {
+            if (i % 7 === 0) {
+                console.log(i);
+            }
+        }
+
+        // Task 3: Store numbers divisible by 7 in an array
+        let divisibleBy7Array = [];
+        for (let i = 20; i <= 80; i++) {
+            if (i % 7 === 0) {
+                divisibleBy7Array.push(i);
+            }
+        }
+
+        // Task 4: Display the array with all the values
+        console.log("Task 3 and 4:");
+        console.log(divisibleBy7Array);
+
+
+    </script>
+</body>
+</html>

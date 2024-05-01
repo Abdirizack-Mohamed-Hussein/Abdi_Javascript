@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Define the correct password
+        let correctPassword = "admin@123";
+
+        // Define the maximum number of attempts
+        let maxAttempts = 4;
+
+        // Loop to prompt the user for the password
+        for (let i = 1; i <= maxAttempts; i++) {
+            // Prompt the user for the password
+            let password = prompt("Enter the password (Attempt " + i + " of " + maxAttempts + "):");
+
+            // Check if the password is correct
+            if (password === correctPassword) {
+                console.log("Access granted!");
+                break;
+            } else if (i === maxAttempts) {
+                console.log("Maximum number of attempts reached. Account blocked!");
+            } else {
+                console.log("Incorrect password. Please try again.");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Prompt the user for marks and store it in the variable 'marks'
+var marks = prompt("Enter your marks (between 0 and 100):");
+
+// Convert marks to a number
+marks = parseFloat(marks);
+
+// Check if the marks are within the valid range (0 to 100)
+if (marks >= 0 && marks <= 100) {
+    // Determine the grade based on the marks
+    var grade;
+    if (marks >= 70) {
+        grade = 'A';
+    } else if (marks >= 60) {
+        grade = 'B';
+    } else if (marks >= 50) {
+        grade = 'C';
+    } else if (marks >= 40) {
+        grade = 'D';
+    } else {
+        grade = 'E';
+    }
+    
+
+    // Alert the grade
+    alert("Your grade is: " + grade);
+} else {
+    // Alert an error message if the marks are not within the valid range
+    alert("Error: Marks should be between 0 and 100.");
+}
+
+    </script>
+</body>
+</html>

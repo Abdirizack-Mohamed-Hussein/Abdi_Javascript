@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+
+    // Prompt the user for a phone number
+let userInput = prompt("Enter a phone number:");
+
+// Remove any spaces and non-digit characters from the input
+userInput = userInput.replace(/\D/g, '');
+
+// Define an array of possible prefixes
+let prefixes = ["+254", "07", "7", "254", "01", "1"];
+
+// Flag to check if a valid prefix is found
+let isValid = false;
+
+// Iterate through the prefixes to find a match
+for (let i = 0; i < prefixes.length; i++) {
+    let prefix = prefixes[i];
+    if (userInput.startsWith(prefix)) {
+        if (prefix.length > 1) {
+            userInput = "+254" + userInput.slice(prefix.length);
+        } else {
+            userInput = "+254" + userInput;
+        }
+        isValid = true;
+        break;
+    }
+}
+
+// Display the result
+if (isValid) {
+    console.log("Converted phone number:", userInput);
+} else {
+    console.log("Invalid phone number format.");
+}
+
+
+ </script>
+</body>
+</html>

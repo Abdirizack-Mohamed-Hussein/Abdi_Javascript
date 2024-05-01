@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+//         // write a function that state hello world
+//         function sayHelloWorld() {
+//             console.log("Hello World!");
+//         }
+
+//         // Call the function to print the message
+//         sayHelloWorld();
+
+//         // write a function that state hello world
+//         function sayHelloWithPrompt() {
+//             const name = prompt("Enter your name:"); // Get user input using prompt
+//             console.log("Hello " + name + "!");
+//         }
+
+//         sayHelloWithPrompt(); // Call the function
+
+//         // write a function that state hello world
+//         const name = "Bob";
+//         const greeting = `Hello, ${name}!`;
+//         console.log(greeting); // Output: "Hello, Bob!"
+// // In this example, the ${ name } part is replaced with the value of the name variable, 
+// // resulting in the final greeting.
+
+// // parameter are variables only used inside the function.
+// // arguments are the actual values passed when calling functions
+
+
+// //write a function to calculate area of triangle
+
+
+//  function areaoftriangle(a,b) {
+//     let area=(a * b)/2
+// let base=prompt("Enter the base of the triangle: ")
+// let height=prompt("Enter the height of the triangle: ")
+// console.log(area)
+// }
+// areaoftriangle(base,height)
+
+
+// Function to calculate the area of a rectangle
+// function calculateRectangle(l,w) {
+//     let area=(l*w)
+//     console.log(area)
+   
+// }
+
+// let length = prompt("Enter the length of the rectangle:");
+// let width = prompt("Enter the width of the rectangle:");
+
+// calculateRectangle(length,width)
+
+// // Function to calculate the area of a square
+// function calculatesquare(l,l) {
+//     let area=(l*2)
+//     console.log(area)
+   
+// }
+
+// let length1= prompt("Enter the length of the square:");
+
+
+// calculatesquare(length1)
+
+
+// return 
+function findLargestNumber() {
+    // Prompting the user to input three numbers
+    let num1 = parseFloat(prompt("Enter the first number:"));
+    let num2 = parseFloat(prompt("Enter the second number:"));
+    let num3 = parseFloat(prompt("Enter the third number:"));
+
+    // Comparing the numbers to find the largest one
+    let largest = num1;
+    if (num2 > largest) {
+        largest = num2;
+    }
+    if (num3 > largest) {
+        largest = num3;
+    }
+
+    // Returning the largest number
+    return largest;
+}
+
+// Calling the function and storing the result in a variable
+let result = findLargestNumber();
+
+// Displaying the result
+alert("The largest number is: " + result);
+
+
+    </script>
+</body>
+
+</html>

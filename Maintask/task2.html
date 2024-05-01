@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Function to check if a number is even
+function isEven(number) {
+    return number % 2 === 0;
+}
+
+// Function to check if a number is divisible by 4
+function isDivisibleBy4(number) {
+    return number % 4 === 0;
+}
+
+// Prompt the user for a number
+let userInput = parseFloat(prompt("Enter a number:"));
+
+// Check if the number is even or odd
+if (isEven(userInput)) {
+    console.log("The number is even.");
+    if (isDivisibleBy4(userInput)) {
+        console.log("It is also divisible by 4.");
+    }
+} else {
+    console.log("The number is odd.");
+}
+
+
+    </script>
+</body>
+</html>

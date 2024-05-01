@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salary Calculator</title>
+</head>
+<body>
+  <h2>Salary Calculator</h2>
+  <form id="salaryForm">
+    <label for="basic_salary">Basic Salary</label><br>
+    <input type="number" id="basic_salary" name="basic_salary" required><br>
+
+    <label for="benefits">Benefits</label><br>
+    <input type="number" id="benefits" name="benefits" required><br>
+
+    <button type="button" onclick="calculateSalary()">Calculate</button>
+  </form>
+
+  <div id="results" style="display: none;">
+    <h3>Results:</h3>
+    <p id="gross_salary"></p>
+    <p id="NHIF"></p>
+    <p id="NSSF"></p>
+    <p id="NHDF"></p>
+    <p id="taxable_income"></p>
+    <p id="payee"></p>
+    <p id="net_salary"></p>
+  </div>
+
+  <script src="salary_form.js">
+   
+  </script>
+</body>
+</html>

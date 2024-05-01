@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Creating an object
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    email: "john.doe@example.com",
+    address: 65,
+    street: "123 Main St",
+      city: "Anytown",
+      country: "USA"
+    }
+    console.log(person)
+    // Accessing object properties
+  console.log("First Name:", person.firstName);
+  console.log("Last Name:", person.lastName);
+  console.log("Age:", person.age);
+  console.log("Email:", person.email);
+  console.log("Street:", person.address.street);
+  console.log("City:", person.address.city);
+  console.log("Country:", person.address.country);
+
+//   Adding Properties:
+let peron = {
+    firstName: "John",
+    lastName: "Doe"
+};
+
+// Adding new properties
+person.age = 30;
+person.email = "john.doe@example.com";
+
+console.log(person);
+
+// Adding Nested Objects:
+let person = {
+    name: "John",
+    address: {
+        city: "New York",
+        country: "USA"
+    }
+};
+
+// Adding a nested object
+person.address.zipCode = "10001";
+
+console.log(person);
+
+
+// Define an object
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    email: "john.doe@example.com"
+};
+
+// Update properties
+person.age = 35;
+person.email = "john.doe.updated@example.com";
+
+console.log(person);
+
+
+// Define an object
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    email: "john.doe@example.com"
+};
+
+// Access keys only
+let keys = Object.keys(person);
+console.log("Keys:", keys);
+
+// Access values only
+let values = Object.values(person);
+console.log("Values:", values);
+
+
+// Access keys and values together
+let entries = Object.entries(person);
+console.log("Entries:", entries);
+
+
+
+
+    </script>
+</body>
+</html>

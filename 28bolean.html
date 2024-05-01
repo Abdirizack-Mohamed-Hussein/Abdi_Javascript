@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Tests</title>
+</head>
+
+<body>
+    <script>
+// Question 1: Check if a number is between 0 and 100
+
+        let number = prompt("Enter your number:");
+        if (number >= 0 && number <= 100)
+        { alert(`${number} Is number between 0 and 100!`); }
+
+        else {alert("Error: number should be between 0 and 100.");}
+       // Alert an error message if the  number is not within the valid range
+
+// Question 2: Check if an email is valid
+        let email = prompt("Enter your email: ");
+        if (email.includes("@") && email.includes("."))
+        
+        alert(`${email} is Valid Email`); // Should log true
+        else {alert("Error: email should have @ or .");}// Alert Invalid email!
+       
+
+// Question 3: Check if a phone number is a valid Kenyan phone number
+let phoneNumber=prompt("Enter Phonenumber: ")
+    // Remove any non-digit characters
+    phoneNumber = phoneNumber.replace(/\D/g, '');
+    
+    // Check if the phone number is valid
+    if (phoneNumber.length === 9 &&                 // 9 digits
+       (phoneNumber.startsWith('07') ||           // Starts with 07
+        phoneNumber.startsWith('7')) )              // or just 7
+ {console.log(true);} 
+ else if (
+        phoneNumber.length === 10 &&                // 10 digits
+        (phoneNumber.startsWith('011') ||          // Starts with 011
+        phoneNumber.startsWith('11'))   )           // or just 11
+     {console.log(true);} 
+     else if (
+        phoneNumber.length === 12 &&                // 12 digits
+        (phoneNumber.startsWith('+2547') ||        // Starts with +2547
+        phoneNumber.startsWith('2547'))  )          // or just 2547
+     {console.log(true);} 
+     else {console.log(false);}
+
+
+// Test cases
+isValidKenyanPhoneNumber("+254712345678");  // true
+isValidKenyanPhoneNumber("254712345678");   // true
+isValidKenyanPhoneNumber("0712345678");     // true
+isValidKenyanPhoneNumber("712345678");      // true
+isValidKenyanPhoneNumber("0112345678");     // true
+isValidKenyanPhoneNumber("112345678");      // true
+isValidKenyanPhoneNumber("12345678");       // false
+isValidKenyanPhoneNumber("07123456789");    // false
+isValidKenyanPhoneNumber("+254123456789");  // false
+isValidKenyanPhoneNumber("123");            // false
+
+
+    </script>
+
+</body>
+
+</html>

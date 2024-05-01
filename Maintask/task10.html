@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Array of products
+let prods = [['omo','30kshs','300'], ['milk','50kshs','200'],['bread','45kshs','359'], ['coffee','5kshs','79']];
+
+// Variable to store total stock
+let totalStock = 0;
+
+// Loop through each product
+for (let i = 0; i < prods.length; i++) {
+    // Get the stock from the last element of each array and convert it to a number
+    let stock = parseInt(prods[i][2]);
+    // Add the stock to the total
+    totalStock += stock;
+}
+
+// Display the total stock
+console.log("Total stock in the company is: " + totalStock);
+
+
+
+    </script>
+</body>
+</html>

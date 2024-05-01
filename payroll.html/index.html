@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Net Pay Calculator</title>
+      
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="header">Payroll Net Pay Calculator</h1>
+        <div class="input-field">
+            <label for="basic-salary">Basic Salary (KES):</label>
+            <input type="number" id="basic-salary" class="input">
+        </div>
+        <div class="input-field">
+            <label for="benefits">Benefits (KES):</label>
+            <input type="number" id="benefits" class="input">
+        </div>
+        <button onclick="calculate()">CALCULATE</button>
+        <div class="result">
+            <h2 class="result-item">Gross Salary (KES): <span id="gross-salary"></span></h2>
+            <h2 class="result-item">NSSF (KES): <span id="nssf"></span></h2>
+            <h2 class="result-item">NHIF (KES): <span id="nhif"></span></h2>
+            <h2 class="result-item">Payable Tax (KES): <span id="tax"></span></h2>
+            <h2 class="result-item">Net Pay (KES): <span id="net-pay"></span></h2>
+        </div>
+    </div>
+</body>
+</html>

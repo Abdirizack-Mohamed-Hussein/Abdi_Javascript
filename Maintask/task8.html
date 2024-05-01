@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Prompt the user to input the speed of the car
+let speed = parseFloat(prompt("Enter the speed of the car (in km/h):"));
+
+// Define the speed limit
+let speedLimit = 70;
+
+// Define the demerit points per 5 km/h over the speed limit
+let demeritPointsPer5kmh = 1;
+
+// Check if the speed is over the speed limit
+if (speed <= speedLimit) {
+    console.log("Ok");
+} else {
+    // Calculate the demerit points
+    let demeritPoints = Math.floor((speed - speedLimit) / 5);
+
+    // Output the demerit points
+    console.log("Points:", demeritPoints);
+
+    // Check if the demerit points exceed the limit
+    if (demeritPoints > 12) {
+        console.log("License suspended");
+    }
+}
+
+    </script>
+</body>
+</html>
